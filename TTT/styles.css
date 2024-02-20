@@ -1,0 +1,83 @@
+*{
+  margin:3px;
+}
+a{
+  display: inline;
+  float: right;
+  list-style: none;
+}
+p{
+  display: inline;
+}
+button{
+  width: 100%;
+}
+.playground{
+  margin-left: 14%;
+  margin-top: 3%;
+  display:grid;
+  grid-template-columns: 20% 60% 20%;
+  display:inline-flex;
+}
+.game-board {
+  margin: 3em;
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+}
+@media only screen and (max-width: 1000px) {
+  .game-board {
+      display: grid;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-columns: 150px 150px 150px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .game-board {
+      display: grid;
+      grid-template-rows: 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px;
+  }
+}
+
+// for some css stylings
+body {
+  display: flex;
+  justify-content: center;
+}
+#game-pieces-player{
+  margin-top: 20%;
+  visibility: hidden;
+  background-color: lightblue;
+  overflow-x: visible;
+}
+#game-pieces-oppo{
+  margin-top:20%;
+  visibility: hidden;
+  background-color: yellow;
+}
+#q13{
+  visibility: hidden;
+}
+div.piece{
+  text-align: center;
+  border-color: red;
+  border-width: thin;
+  border-style: solid;
+}
+div.piece[used="true"]{
+  visibility: hidden;
+}
+div.piece:hover{
+background-color: orange;
+}
+p{
+  font-size:2em;
+}
+.box {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;

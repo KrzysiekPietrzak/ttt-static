@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script2.js" defer></script>
+
+  </head>
+  <body>
+    <div class="playground">
+      <div>
+        <span><p >Ilość wygranych</p>
+
+        <p id="wygranap">0</p>
+</span>
+      <div id="game-pieces-player"  >
+
+        <div class="piece" id="p0" size=1 owner ="p" used ="false" onclick="PickPiece(this.id)">Najmniejszy</div>
+        <div class="piece" id="p1" size=2 owner ="p"  used ="false" onclick="PickPiece(this.id)">Mały</div>
+        <div class="piece" id="p2" size=3 owner ="p"  used ="false"onclick="PickPiece(this.id)">Średni</div>
+        <div class="piece" id="p3" size=4 owner ="p"  used ="false"onclick="PickPiece(this.id)">Duży</div>
+        <div class="piece" id="p4" size=5 owner ="p"  used ="false"onclick="PickPiece(this.id)">Wielki</div>
+        <div class="piece" id="p5" size=6 owner ="p"  used ="false"onclick="PickPiece(this.id)">Największy</div>
+      </div>
+    </div>
+  <div class="game-board">
+
+  <div class="box" id="td1" owner="game1" size="0" onclick="PutPiece(this.id)" > </div>
+  <div class="box" id="td2" owner="game2" size="0" onclick="PutPiece(this.id)"> </div>
+  <div class="box" id="td3" owner="game3" size="0"onclick="PutPiece(this.id)" > </div>
+  <div class="box" id="td4" owner="game4" size="0"onclick="PutPiece(this.id)" > </div>
+  <div class="box" id="td5" owner="game5" size="0"onclick="PutPiece(this.id)" > </div>
+  <div class="box" id="td6" owner="game6" size="0"onclick="PutPiece(this.id)" > </div>
+  <div class="box" id="td7" owner="game7" size="0"onclick="PutPiece(this.id)" > </div>
+  <div class="box" id="td8" owner="game8" size="0"onclick="PutPiece(this.id)" > </div>
+  <div class="box" id="td9" owner="game9" size="0"onclick="PutPiece(this.id)" > </div>
+</div>
+
+<div>
+  <span><p >Ilość wygranych</p>
+
+  <p id="wygranao">0</p>
+</span>
+  <div id="game-pieces-oppo"  >
+
+    <div class="piece" id="p6" size=1 owner ="o"  used ="false" onclick="PickPiece(this.id)">Najmnniejszy</div>
+    <div class="piece" id="p7" size=2 owner ="o"  used ="false" onclick="PickPiece(this.id)">Mały</div>
+    <div class="piece" id="p8" size=3 owner ="o"  used ="false" onclick="PickPiece(this.id)">Średni</div>
+    <div class="piece" id="p9" size=4 owner ="o"  used ="false"onclick="PickPiece(this.id)">Duży</div>
+    <div class="piece" id="p10" size=5 owner ="o"  used ="false"onclick="PickPiece(this.id)">Wielki</div>
+    <div class="piece" id="p11" size=6 owner ="o"  used ="false" onclick="PickPiece(this.id)">Największy</div>
+  </div>
+  <div></div>
+</div>
+</div>
+<div class="buttons">
+  <button onclick="StartGame()" id="q12">Start Game</button>
+  <button onclick="NewGame()" id="q13">New Game</button>
+</div>
+</body>
+</html>
